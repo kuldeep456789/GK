@@ -11,14 +11,14 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ reviews }) => {
     <section className="bg-gray-50 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">Loved by Dreamers Worldwide</h2>
+          <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">Loved by Music Lovers Worldwide</h2>
           <div className="flex items-center justify-center gap-2">
-             <div className="flex text-yellow-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-current" />
-                ))}
-             </div>
-             <span className="text-gray-600 font-medium">4.9/5 Average Rating</span>
+            <div className="flex text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-5 w-5 fill-current" />
+              ))}
+            </div>
+            <span className="text-gray-600 font-medium">4.9/5 Average Rating</span>
           </div>
         </div>
 

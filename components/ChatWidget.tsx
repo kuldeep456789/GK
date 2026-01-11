@@ -5,7 +5,7 @@ import { ChatMessage } from '../types';
 export const ChatWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: "Welcome to Audi Premium. I'm your digital assistant. How can I help you find your perfect Audi A4 today?" }
+    { role: 'model', text: "Welcome to Apple Store. I'm your digital assistant. How can I help you regarding AirPods Pro 2 today?" }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -31,12 +31,12 @@ export const ChatWidget: React.FC = () => {
     setTimeout(() => {
       setIsTyping(false);
       const responses = [
-        "That's a great question about the 2024 Audi A4!",
-        "The Audi A4 features the legendary quattro all-wheel drive for superior traction.",
-        "Would you like to know more about the Virtual Cockpit or the TFSI engine?",
-        "Our current Mythos Black model comes with the Premium Plus package.",
-        "Would you like to schedule a virtual tour of the interior?",
-        "The 2024 A4 is designed with both performance and safety in mind."
+        "That's a great question about the AirPods Pro 2!",
+        "The Active Noise Cancellation is 2x better than the previous generation.",
+        "Would you like to know more about the new H2 chip or battery life?",
+        "The new MagSafe Charging Case now includes a built-in speaker for Precision Finding.",
+        "Adaptive Audio dynamically blends Transparency mode and ANC for you.",
+        "Yes, they come with multiple ear tip sizes (XS, S, M, L) for a perfect fit."
       ];
       const randomResponse = responses[Math.floor(Math.random() * responses.length)];
       setMessages(prev => [...prev, { role: 'model', text: randomResponse }]);
@@ -68,7 +68,7 @@ export const ChatWidget: React.FC = () => {
               <Sparkles className="h-5 w-5 text-yellow-300" />
             </div>
             <div>
-              <h3 className="text-white font-bold text-sm">Audi Assistant</h3>
+              <h3 className="text-white font-bold text-sm">Apple Specialist</h3>
               <p className="text-gray-300 text-xs flex items-center gap-1">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 Online
@@ -115,7 +115,7 @@ export const ChatWidget: React.FC = () => {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyPress}
-                placeholder="Ask about the lamp..."
+                placeholder="Ask about AirPods..."
                 className="flex-1 bg-gray-100 border-none rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-black outline-none"
               />
               <button

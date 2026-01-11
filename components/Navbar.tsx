@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, Car } from 'lucide-react';
+import { ShoppingBag, Headphones } from 'lucide-react';
 
 interface NavbarProps {
   cartItemCount: number;
@@ -13,9 +13,9 @@ export const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onOpenCart }) => 
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Car className="h-6 w-6 text-black" />
+            <Headphones className="h-6 w-6 text-black" />
             <span className="font-serif text-xl font-bold tracking-tight text-gray-900">
-              Audi Premium
+              Apple
             </span>
           </div>
 

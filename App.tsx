@@ -10,28 +10,28 @@ import { Product, CartItem, Review } from './types';
 
 // Mock Data matching the Amazon Product vibe
 const MOCK_PRODUCT: Product = {
-  id: 'audi-a4-2024',
-  title: '2024 Audi A4 Sedan - Mythos Black Metallic (Premium Plus)',
-  price: 45000,
-  originalPrice: 48500,
-  description: "The 2024 Audi A4 Sedan offers a brilliant blend of performance, luxury, and technology. Featuring the legendary quattro all-wheel drive, a turbocharged engine, and a meticulously crafted interior with the Audi Virtual Cockpit. Elevate your driving experience with unparalleled German engineering.",
+  id: 'airpods-pro-2-usbc',
+  title: 'Apple AirPods Pro (2nd Generation) with MagSafe Case (USB‑C)',
+  price: 24900,
+  originalPrice: 26900,
+  description: "The new AirPods Pro feature up to 2x more Active Noise Cancellation, plus Adaptive Transparency, and Personalized Spatial Audio with dynamic head tracking for immersive sound. Now with multiple ear tips (XS, S, M, L) and up to 6 hours of listening time.",
   features: [
-    "QUATTRO ALL-WHEEL DRIVE: Legendary grip and handling in all weather conditions.",
-    "TURBOCHARGED ENGINE: 2.0L TFSI engine delivering 261 HP for an exhilarating drive.",
-    "VIRTUAL COCKPIT: A fully digital 12.3-inch instrument cluster that allows you to customize information.",
-    "LEATHER INTERIOR: Premium leather seating surfaces with heated front seats and ambient lighting.",
-    "ADVANCED SAFETY: Audi pre sense city and lane departure warning for peace of mind."
+    "RICHER AUDIO EXPERIENCE — The Apple-designed H2 chip pushes advanced audio performance even further, resulting in smarter noise cancellation and more immersive sound.",
+    "NEXT-LEVEL ACTIVE NOISE CANCELLATION — Up to 2x more Active Noise Cancellation than the previous AirPods Pro for dramatically less noise during your commute.",
+    "CUSTOMIZABLE FIT — Now includes four pairs of silicone tips (XS, S, M, L) to fit a wider range of ears and provide an acoustic seal.",
+    "SOUND ALL AROUND — Personalized Spatial Audio surrounds you with sound tuned just for you. It works with dynamic head tracking to immerse you deeper in music and movies.",
+    "HIGHER LEVEL OF CONTROL — Now you can swipe the stem to adjust volume. Press it to play and pause music or to answer and end a call."
   ],
   images: [
-    "/audi_1.png",
-    "/audi_2.png",
-    "/audi_3.png",
-    "/audi_4.png"
+    "/img/image1.jpg",
+    "/img/image2.jpg",
+    "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&fit=crop&w=1000&q=80",
+    "/img/six.jpg"
   ],
   reviews: [
-    { id: 'r1', author: 'Mark S.', rating: 5, text: "The handling on this car is incredible. Quattro makes a huge difference in the rain. The interior feels like a spaceship.", date: "2024-01-15" },
-    { id: 'r2', author: 'Sarah L.', rating: 5, text: "Perfect daily driver. It's fuel efficient for its class but still has plenty of power when you need it. The tech is top-notch.", date: "2023-11-28" },
-    { id: 'r3', author: 'David K.', rating: 4, text: "Beautiful car. The trunk space is a bit tight for a family of four, but for a sedan, it's manageable. Love the ambient lighting.", date: "2024-02-10" }
+    { id: 'r1', author: 'Rajesh K.', rating: 5, text: "Best active noise cancellation I have ever experienced. Perfect for the Delhi metro commute!", date: "2024-01-15" },
+    { id: 'r2', author: 'Priya M.', rating: 5, text: "Seamless switching between my iPhone and MacBook is a game changer. Worth every rupee.", date: "2023-12-10" },
+    { id: 'r3', author: 'Amit S.', rating: 4, text: "Great sound, but I wish the battery lasted a bit longer on calls. Fast charging case helps though.", date: "2024-02-05" }
   ]
 };
 
@@ -94,19 +94,18 @@ const App: React.FC = () => {
         {/* Detailed Features / Marketing Content */}
         <section className="py-20 bg-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-serif font-bold mb-6">Redefining Excellence</h2>
+            <h2 className="text-3xl font-serif font-bold mb-6">Rebuilt from the sound up.</h2>
             <p className="text-gray-600 mb-12">
-              The Audi A4 Sedan represents a marriage of sporty character and premium sophistication.
-              Designed with a focus on driver ergonomics and passenger comfort, it sets a new standard in the compact luxury segment.
+              AirPods Pro have been re-engineered for even richer audio experiences. Next-level Active Noise Cancellation and Adaptive Transparency reduce more external noise. Spatial Audio takes immersion to a remarkably personal level.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
               <div className="p-6 bg-gray-50 rounded-xl border border-gray-100">
-                <h3 className="font-bold text-lg mb-2">MMI® Touch Display</h3>
-                <p className="text-sm text-gray-600">Control your navigation, infotainment, and settings with a crisp 10.1-inch screen that offers acoustic feedback.</p>
+                <h3 className="font-bold text-lg mb-2">H2 Chip</h3>
+                <p className="text-sm text-gray-600">The new H2 chip orchestrates more smart functions than ever, using computational algorithms to deliver even smarter noise cancellation.</p>
               </div>
               <div className="p-6 bg-gray-50 rounded-xl border border-gray-100">
-                <h3 className="font-bold text-lg mb-2">Driver Assist Systems</h3>
-                <p className="text-sm text-gray-600">Features like Audi pre sense® basic and city help monitor traffic and can even initiate emergency braking.</p>
+                <h3 className="font-bold text-lg mb-2">MagSafe Charging Case</h3>
+                <p className="text-sm text-gray-600">The new MagSafe Charging Case includes the U1 chip for Precision Finding to help you identify the location of your case.</p>
               </div>
             </div>
           </div>
